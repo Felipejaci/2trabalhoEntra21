@@ -139,12 +139,7 @@ namespace Trabalho02MVC.Control
                         }
                     }
                 }
-            }
-            else
-            {
-                
-            }
-
+            }            
             return Math.Floor(points).ToString();//retorna o numero arredondado para baixo
         }
     }
