@@ -64,7 +64,7 @@ namespace Trabalho02MVC
             //confere se a palavra ja foi usada
             foreach (var item in palavrasUsadas)
             {
-                if (item == txtInsira.Text)
+                if (item == txtInsira.Text.ToUpper())
                 {
                     confere = false;
                 }
@@ -81,7 +81,12 @@ namespace Trabalho02MVC
             }
             else if (confere == false)
             {
-                MessageBox.Show("Palavra já usada", "Caça-Palavras", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                DialogResult teste = MessageBox.Show("Palavra já usada", "Caça-Palavras", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
+                //MessageBox.Show(teste.ToString());
+                if (teste.ToString() == "Cancel")
+                {
+                    Application.Exit();
+                }
             }
             txtInsira.Clear();
         }

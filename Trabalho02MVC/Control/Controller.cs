@@ -9,28 +9,30 @@ namespace Trabalho02MVC.Control
     class Controller
     {
         public static string
-            
+
         ContadorPontos(string[][] matriz, string nu)
         {
             //cria variaveis utilizadas
             double points = 0;
             string numProcura = "";
             bool confere = false;
-            
-            for (int i = 0; i < matriz.Length; i++)
+            if (!string.IsNullOrEmpty(nu))
             {
-                for (int j = 0; j < matriz[i].Length; j++)
+                for (int i = 0; i < matriz.Length; i++)
                 {
-                    if (matriz[i][j] == nu[0].ToString())
+                    for (int j = 0; j < matriz[i].Length; j++)
                     {
-                        //se o numero esta na metriz
-                        confere = true;
-                        //numProcura recebe o numero atual
-                        numProcura = matriz[i][j];
-                        //adiciona os pontos ao usuario
-                        points += 0.5;
-                        i = 20;
-                        break;
+                        if (matriz[i][j] == nu[0].ToString())
+                        {
+                            //se o numero esta na metriz
+                            confere = true;
+                            //numProcura recebe o numero atual
+                            numProcura = matriz[i][j];
+                            //adiciona os pontos ao usuario
+                            points += 0.5;
+                            i = 20;
+                            break;
+                        }
                     }
                 }
             }
@@ -107,7 +109,7 @@ namespace Trabalho02MVC.Control
                                 bool teste2 = false;
                                 for (int l = 0; l < lista.Count; l++)//for que confere se o proximo numero esta na lista de numeros adjacentes
                                 {
-                                    for (int m = k - 1; m > 0; m--)//for que confere numeros repetidos
+                                    for (int m = k - 1; m > -1; m--)//for que confere numeros repetidos
                                     {
                                         if (nu[k] == nu[m])
                                         {
@@ -139,7 +141,7 @@ namespace Trabalho02MVC.Control
                         }
                     }
                 }
-            }            
+            }
             return Math.Floor(points).ToString();//retorna o numero arredondado para baixo
         }
     }
