@@ -42,6 +42,7 @@ namespace Trabalho02MVC
 
         private void btnExecutar_Click(object sender, EventArgs e)
         {
+            
             bool confere = true;
             //cria a matriz para verificar os pontos
             string[][] matriz = new string[3][];
@@ -72,15 +73,15 @@ namespace Trabalho02MVC
             if (confere == true)
             {
                 //adiciona no data grid
-                palavrasUsadas.Add(txtInsira.Text);
-                uso.palavras = txtInsira.Text;
+                palavrasUsadas.Add(txtInsira.Text.ToUpper());
+                uso.palavras = txtInsira.Text.ToUpper();
                 uso.pontos = Convert.ToInt32(Control.Controller.ContadorPontos(matriz, txtInsira.Text.ToUpper()));
 
                 dgPontos.Rows.Add(uso.palavras, uso.pontos);
             }
             else if (confere == false)
             {
-                MessageBox.Show("Palavra ja usada");
+                MessageBox.Show("Palavra já usada", "Caça-Palavras", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             txtInsira.Clear();
         }

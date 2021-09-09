@@ -38,3 +38,13 @@ E:\Felipe\Trabalho02MVC\obj\Debug\Trabalho02MVC.csproj.GenerateResource.cache
 E:\Felipe\Trabalho02MVC\obj\Debug\Trabalho02MVC.csproj.CoreCompileInputs.cache
 E:\Felipe\Trabalho02MVC\obj\Debug\Trabalho02MVC.exe
 E:\Felipe\Trabalho02MVC\obj\Debug\Trabalho02MVC.pdb
+C:\Users\Alex\Desktop\2trabalhoEntra21\Trabalho02MVC\bin\Debug\Trabalho02MVC.exe.config
+C:\Users\Alex\Desktop\2trabalhoEntra21\Trabalho02MVC\bin\Debug\Trabalho02MVC.exe
+C:\Users\Alex\Desktop\2trabalhoEntra21\Trabalho02MVC\obj\Debug\Trabalho02MVC.csproj.AssemblyReference.cache
+C:\Users\Alex\Desktop\2trabalhoEntra21\Trabalho02MVC\obj\Debug\Trabalho02MVC.Form1.resources
+C:\Users\Alex\Desktop\2trabalhoEntra21\Trabalho02MVC\obj\Debug\Trabalho02MVC.Properties.Resources.resources
+C:\Users\Alex\Desktop\2trabalhoEntra21\Trabalho02MVC\obj\Debug\Trabalho02MVC.csproj.GenerateResource.cache
+C:\Users\Alex\Desktop\2trabalhoEntra21\Trabalho02MVC\obj\Debug\Trabalho02MVC.csproj.CoreCompileInputs.cache
+C:\Users\Alex\Desktop\2trabalhoEntra21\Trabalho02MVC\obj\Debug\Trabalho02MVC.exe
+C:\Users\Alex\Desktop\2trabalhoEntra21\Trabalho02MVC\obj\Debug\Trabalho02MVC.pdb
+C:\Users\Alex\Desktop\2trabalhoEntra21\Trabalho02MVC\bin\Debug\Trabalho02MVC.pdb
